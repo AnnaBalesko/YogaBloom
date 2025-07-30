@@ -2,124 +2,1122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/YogaBloom/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>YogaBloom</title>
+    <link rel="icon" type="image/svg+xml" href="/YogaBloom/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
     <script type="module" crossorigin src="/YogaBloom/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/YogaBloom/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/YogaBloom/assets/index-BjlaQ1lY.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="img/sprite.svg#logo"></use>
+    <header class="page-header">
+  <div class="container header-container">
+    <div class="left-header-box">
+      <button type="button" class="menu-button" data-mobile-navbar-open>
+        <svg class="icon-head-button" width="24" height="24">
+          <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-menu"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      </button>
+      <!---->
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-item">
+            <a href="#yoga-classes" class="header-nav-link current"
+              >Yoga classes</a
+            >
+          </li>
+          <li class="header-item">
+            <a href="#team" class="header-nav-link">Team</a>
+          </li>
+          <li class="header-item">
+            <a href="#testimonials" class="header-nav-link">Testimonials</a>
+          </li>
+          <li class="header-item">
+            <a href="#pricing" class="header-nav-link">Pricing</a>
+          </li>
+          <li class="header-item">
+            <a href="#footer" class="header-nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!---->
+    <a href="./index.html" class="header-logo">
+      <svg class="icon-head-logo" width="84" height="36">
+        <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <!---->
+    <div class="right-header-box">
+      <div class="header-link-box">
+        <a class="join-link-mobile" href="#pricing">Join</a>
+        <a class="join-link-desktop" href="#pricing">Join now</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Mobile navbar menu-->
+  <div class="mobile-navbar is-hidden" data-mobile-navbar>
+    <div class="container mobile-navbar-container">
+      <div class="mobile-navbar-header">
+        <button
+          type="button"
+          class="navbar-button-close"
+          data-mobile-navbar-close
+        >
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-cloze"></use>
+          </svg>
+        </button>
+        <!---->
+        <a href="/index.html" class="navbar-header-logo">
+          <svg class="icon-head-logo" width="84" height="36">
+            <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="nav-link-tech-box">
+          <div class="navbar-link-box">
+            <a class="navbar-join-link-mobile" href="#pricing">Join</a>
+            <a class="navbar-join-link-desktop" href="#pricing">Join now</a>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <nav class="navbar-menu-nav">
+        <ul class="navbar-nav-list">
+          <li class="navbar-nav-item">
+            <a href="#yoga-classes" class="navbar-nav-link">Yoga classes</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#team" class="navbar-nav-link">Team</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#testimonials" class="navbar-nav-link">Testimonials</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#pricing" class="navbar-nav-link">Pricing</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#footer" class="navbar-nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar-nav-link-bottom">
+        <a href="#pricing" class="join-now-button-bottom">Join now</a>
+      </div>
+    </div>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="img/vite-logo.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <section class="hero" id="hero">
+  <picture class="img-hero">
+    <source
+      srcset="/YogaBloom/assets/hero-banner-desktop@1x-Cpji2WHe.jpg 1x, /YogaBloom/assets/hero-banner-desktop@2x-DjEQBTFL.jpg 2x"
+      media="(min-width: 1336px)"
+    />
+    <source
+      srcset="/YogaBloom/assets/hero-banner-tablet@1x-C_sWYfw1.jpg 1x, /YogaBloom/assets/hero-banner-tablet@2x-Ps99Rdss.jpg 2x"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="/YogaBloom/assets/hero-banner-mobile@1x-x8zJ4WKe.jpg 1x, /YogaBloom/assets/hero-banner-mobile@2x-acTFVzBc.jpg 2x"
+      media="(max-width: 767px)"
+    />
+    <img src="/YogaBloom/assets/hero-banner-mobile@1x-x8zJ4WKe.jpg" alt="hero-banner" />
+  </picture>
+    <div class="container hero-container">
+      <h1 class="hero-title">Transform Your Life with Our Yoga Clases</h1>
+      <div class="hero-text-button">
+        <p class="hero-text">
+          Discover the harmony of mind and body through our expertly designed
+          yoga programs. Join a community dedicated to wellness and personal
+          growth.
+        </p>
+        <div class="hero-button">
+          <a href="#pricing" class="hero-button-first">Join Now</a>
+          <a href="#gallery" class="hero-button-second">Learn More</a>
+        </div>
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+</section>
+      <section id="yoga-classes" class="yoga-classes">
+  <div class="container yoga-classes-section">
+    <div class="section-head">
+      <p class="section-direction-title">Explore</p>
+      <h2 class="section-basic-title mobile desctop">
+        Discover Our Most Popular Yoga Programs
+      </h2>
+      <h2 class="section-basic-title tablet">
+        Transform Your Life with Our Yoga Clases
+      </h2>
+      <p class="section-paragraph">
+        Join our community and elevate your practice with our expertly designed
+        yoga programs. Each course is tailored to meet various skill levels and
+        personal goals.
+      </p>
+    </div>
+    <ul class="cards-container">
+      <li class="card">
+        <picture>
+          <source
+            srcset="/YogaBloom/assets/beginnerYogaDESK@1x-b4k3_6VR.jpg 1x, /YogaBloom/assets/beginnerYogaDESK@2x-yx8lQitT.jpg 2x"
+            media="(min-width: 1336px)"
+          />
+          <source
+            srcset="/YogaBloom/assets/beginnerYogaTABLET@1x-C_fMwmPI.jpg 1x, /YogaBloom/assets/beginnerYogaTABLET@2x-Y7I7aRt0.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="card-image"
+            srcset="/YogaBloom/assets/beginnerYogaMOBILE@1x-CRR5-tgY.jpg 1x, /YogaBloom/assets/beginnerYogaMOBILE@2x-B7F-wosF.jpg 2x"
+            src="/YogaBloom/assets/beginnerYogaMOBILE@1x-CRR5-tgY.jpg"
+            alt="Beginner Yoga"
+          />
+        </picture>
+        <h3 class="card-title mobile">
+          Beginner Yoga: Foundations for New Practitioners
+        </h3>
+        <h3 class="card-title tablet desctop">Beginner Yoga: Foundations</h3>
+        <p class="card-paragraph">
+          Learn the basics of yoga in a supportive environment.
+        </p>
+      </li>
+      <li class="card">
+        <picture>
+          <source
+            srcset="/YogaBloom/assets/vinyasaFlowDESK@1x-D5rvL5Ot.jpg 1x, /YogaBloom/assets/vinyasaFlowDESK@2x-BxuMyyiZ.jpg 2x"
+            media="(min-width: 1336px)"
+          />
+          <source
+            srcset="/YogaBloom/assets/vinyasaFlowTABLET@1x-CN7iJtEu.jpg 1x, /YogaBloom/assets/vinyasaFlowTABLET@2x-PhrkSB4O.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="card-image"
+            srcset="/YogaBloom/assets/vinyasaFlowMOBILE@1x-C4JXmj60.jpg 1x, /YogaBloom/assets/vinyasaFlowMOBILE@2x-CV_5nWnq.jpg 2x"
+            src="/YogaBloom/assets/vinyasaFlowMOBILE@1x-C4JXmj60.jpg"
+            alt="Vinyasa Flow"
+          />
+        </picture>
+        <h3 class="card-title">Vinyasa Flow: Energize Your Body and Mind</h3>
+        <p class="card-paragraph">
+          Experience a dynamic sequence that connects breath and movement.
+        </p>
+      </li>
+      <li class="card broad-card">
+        <picture>
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /YogaBloom/assets/restorativeYogaDESK@2x-GHcl7vfB.jpg 2x"
+            media="(min-width: 1336px)"
+          />
+          <source
+            srcset="/YogaBloom/assets/restorativeYogaTABLET@1x-z_qiYJ1a.jpg 1x, /YogaBloom/assets/restorativeYogaTABLET@2x-BxMHRVB5.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="card-image broad-image"
+            srcset="data:image/jpeg;base64,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 1x, /YogaBloom/assets/restorativeYogaMOBILE@2x-X8wA-gVU.jpg 2x"
+            src="data:image/jpeg;base64,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"
+            alt="Restorative Yoga"
+          />
+        </picture>
+        <h3 class="card-title">
+          Restorative Yoga: Deep Relaxation and Healing
+        </h3>
+        <p class="card-paragraph">
+          Unwind and rejuvenate with gentle poses and mindfulness.
+        </p>
+      </li>
+    </ul>
+    <div class="link-container" onclick="location.href='#pricing'">
+      <a class="join-link mobile" href="#pricing">Join</a>
+      <a class="join-link tablet desctop" href="#pricing">Join now</a>
+    </div>
   </div>
 </section>
+      <section class="team" id="team">
+    <div class="container team-container">
+        <div class="team-top-part">
+            <h5 class="team-meet">Meet</h5>
+            <div class="team-header-block">
+                <h2 class="team-header">Our Team</h2>
+                <p class="team-header-text">Dedicated professionals passionate about yoga and wellness.</p>
+            </div>
+        </div>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+        <ul class="team-list">
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/liam-desk-Bdcpe0hb.jpg 1x, /YogaBloom/assets/liam-desk@2x-BLszT30N.jpg 2x"
+                        media="(min-width: 1336px)" width="421">
+                    <source srcset="/YogaBloom/assets/liam-tab-D6FjOeOG.jpg 1x, /YogaBloom/assets/liam-tab@2x-DuXpfch7.jpg 2x" media="(min-width: 768px)"
+                        width="340">
+                    <source srcset="/YogaBloom/assets/liam-mob-CpBDTsMt.jpg 1x, /YogaBloom/assets/liam-mob@2x-CWrEvamV.jpg 2x" media="(max-width: 767px)"
+                        width="343">
+                    <img class="team-img" src="/YogaBloom/assets/liam-mob-CpBDTsMt.jpg" alt="Liam">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Liam Johnson</h3>
+                        <h4 class="team-position">Yoga Instructor</h4>
+                    </div>
+                    <p class="team-item-text">Liam specializes in mindfulness and stress reduction techniques through
+                        guided meditation.</p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.linkedin.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/emma-desk-Dp1JzYt2.jpg 1x, /YogaBloom/assets/emma-desk@2x-_b5TC30x.jpg 2x"
+                        media="(min-width: 1336px)" width="421">
+                    <source srcset="/YogaBloom/assets/emma-tab-cwRklzu9.jpg 1x, /YogaBloom/assets/emma-tab@2x-iXRxLAn1.jpg 2x" media="(min-width: 768px)"
+                        width="340">
+                    <source srcset="/YogaBloom/assets/emma-mob-B644-bP4.jpg 1x, /YogaBloom/assets/emma-mob@2x-CDQ_LBcU.jpg 2x" media="(max-width: 767px)"
+                        width="343">
+                    <img class="team-img" src="/YogaBloom/assets/emma-mob-B644-bP4.jpg" alt="Emma">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Emma Stone</h3>
+                        <h4 class="team-position">Meditation Coach</h4>
+                    </div>
+                    <p class="team-item-text">Emma has over 10 years of experience in Hatha and Vinyasa yoga.</p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.linkedin.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/sophia-desk-BUNoqjwb.jpg 1x, /YogaBloom/assets/sophia-desk@2x-zAB2SQcU.jpg 2x"
+                        media="(min-width: 1336px)" width="421">
+                    <source srcset="/YogaBloom/assets/sophia-tab-BYPdiIcO.jpg 1x, /YogaBloom/assets/sophia-tab@2x-DtrlXuEi.jpg 2x"
+                        media="(min-width: 768px)" width="340">
+                    <source srcset="/YogaBloom/assets/sophia-mob-D55v2Y80.jpg 1x, /YogaBloom/assets/sophia-mob@2x-DpmcATWU.jpg 2x"
+                        media="(max-width: 767px)" width="343">
+                    <img class="team-img" src="/YogaBloom/assets/sophia-mob-D55v2Y80.jpg" alt="Sophia">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Sophia Lee</h3>
+                        <h4 class="team-position">Pilates Trainer</h4>
+                    </div>
+                    <p class="team-item-text">Sophia combines Pilates with yoga for a holistic fitness approach.</p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/noah-desk-37e-n4Wk.jpg 1x, /YogaBloom/assets/noah-desk@2x-DxeR9Fp4.jpg 2x"
+                        media="(min-width: 1336px)" width="421">
+                    <source srcset="/YogaBloom/assets/noah-tab-DD0UshfX.jpg 1x, /YogaBloom/assets/noah-tab@2x-BMzqrPzp.jpg 2x" media="(min-width: 768px)"
+                        width="340">
+                    <source srcset="/YogaBloom/assets/noah-mob-TQBKawtl.jpg 1x, /YogaBloom/assets/noah-mob@2x-B3yvA6ss.jpg 2x" media="(max-width: 767px)"
+                        width="343">
+                    <img class="team-img" src="/YogaBloom/assets/noah-mob-TQBKawtl.jpg" alt="Noah">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Noah Brown</h3>
+                        <h4 class="team-position">Yoga Therapist</h4>
+                    </div>
+                    <p class="team-item-text">Noah focuses on therapeutic yoga to aid recovery and enhance well-being.
+                    </p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.linkedin.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/ava-desk-DnguVmUt.jpg 1x, /YogaBloom/assets/ava-desk@2x-DU4-PvQW.jpg 2x" media="(min-width: 1336px)"
+                        width="421">
+                    <source srcset="/YogaBloom/assets/ava-tab-CHLuGXWx.jpg 1x, /YogaBloom/assets/ava-tab@2x-C3Cp-Mk4.jpg 2x" media="(min-width: 768px)"
+                        width="340">
+                    <source srcset="/YogaBloom/assets/ava-mob-CqwXWHBo.jpg 1x, /YogaBloom/assets/ava-mob@2x-DHgC0BLy.jpg 2x" media="(max-width: 767px)"
+                        width="343">
+                    <img class="team-img" src="/YogaBloom/assets/ava-mob-CqwXWHBo.jpg" alt="Ava">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Ava Green</h3>
+                        <h4 class="team-position">Fitness Trainer</h4>
+                    </div>
+                    <p class="team-item-text">Ava integrates strength training with yoga to promote overall fitness.</p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.facebook.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.linkedin.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="team-item">
+                <picture>
+                    <source srcset="/YogaBloom/assets/clark-desk-BrAYkfll.jpg 1x, /YogaBloom/assets/clark-desk@2x-CENFb_Ka.jpg 2x"
+                        media="(min-width: 1336px)" width="421">
+                    <source srcset="/YogaBloom/assets/clark-tab-5ydDZTai.jpg 1x, /YogaBloom/assets/clark-tab@2x-CwD8vYZi.jpg 2x"
+                        media="(min-width: 768px)" width="340">
+                    <source srcset="/YogaBloom/assets/clark-mob-DU4bqT8c.jpg 1x, /YogaBloom/assets/clark-mob@2x-A3LNYF3o.jpg 2x"
+                        media="(max-width: 767px)" width="343">
+                    <img class="team-img" src="/YogaBloom/assets/clark-mob-DU4bqT8c.jpg" alt="Clark">
+                </picture>
+                <div class="team-card">
+                    <div class="team-card-part">
+                        <h3 class="team-name">Clark Thomas</h3>
+                        <h4 class="team-position">Fitness Trainer</h4>
+                    </div>
+                    <p class="team-item-text">Clark specializes in mindfulness and stress reduction techniques through
+                        guided meditation.</p>
+                </div>
+                <ul class="team-social-network">
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.facebook.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="team-social-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-social-icon" width="24" height="24">
+                                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section id="gallery" class="gallery">
+  <div class="container gallery-container">
+    <div class="gallery-header">
+    <h2 class="gallery-title">Breathe in the Space</h2>
+    <p class="gallery-text">
+    Step inside YogaBloom and feel the calm. Explore our serene studio and the
+    peaceful moments our community shares during each session.
+    </p>
+  </div>
+  <ul class="gallery-list">
+    <li class="gallery-list-item">
+      <picture class="gallery-picture">
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-1-min-CvVdUYiy.png 1x, /YogaBloom/assets/gallery-desk-1@2x-min-B3nmeDzX.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-1-min-CufevkM4.png 1x, /YogaBloom/assets/gallery-tab-1@2x-min-q4zCLAAT.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-1-min-D5rDFk-M.png 1x, /YogaBloom/assets/gallery-mob-1@2x-min-CcqhW1sA.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-1-min-CvVdUYiy.png"
+          alt="Group practicing warrior pose during a yoga class"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+    <li class="gallery-list-item">
+        <picture>
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-2-min-Czyiap9V.png 1x, /YogaBloom/assets/gallery-desk-2@2x-min-DE7Hwd1U.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-2-min-e_7WxYHE.png 1x, /YogaBloom/assets/gallery-tab-2@2x-min-C5jSlj-I.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-2-min-DmAckVvJ.png 1x, /YogaBloom/assets/gallery-mob-2@2x-min-Cz8zO78k.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-2-min-Czyiap9V.png"
+          alt="Woman meditating in lotus pose at the center of a yoga group"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+    <li class="gallery-list-item">
+        <picture>
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-3-min-BNLtRSVt.png 1x, /YogaBloom/assets/gallery-desk-3@2x-min-D2knYBuN.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-3-min-Bsqsxl-I.png 1x, /YogaBloom/assets/gallery-tab-3@2x-min-C_pV6CgM.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-3-min-DfKrU7pX.png 1x, /YogaBloom/assets/gallery-mob-3@2x-min-DBYdixQG.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-3-min-BNLtRSVt.png"
+          alt="Empty yoga studio with mats and warm natural lights"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+    <li class="gallery-list-item">
+        <picture>
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-4-min-Cju_SHAq.png 1x, /YogaBloom/assets/gallery-desk-4@2x-min-DASDFmXD.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-4-min-DlkcJpVI.png 1x, /YogaBloom/assets/gallery-tab-4@2x-min-D3YOIMVt.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-4-min-B7qdoR2R.png 1x, /YogaBloom/assets/gallery-mob-4@2x-min-Ch2i2bCM.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-4-min-Cju_SHAq.png"
+          alt="Peaceful yoga studio setup with blocks and mats"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+    <li class="gallery-list-item">
+        <picture>
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-5-min-D6_TLQJ2.png 1x, /YogaBloom/assets/gallery-desk-5@2x-min-CuVVW2QJ.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-5-min-eUzplTuc.png 1x, /YogaBloom/assets/gallery-tab-5@2x-min-BGTF1MZ8.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-5-min-vSmkB_PU.png 1x, /YogaBloom/assets/gallery-mob-5@2x-min-DAwhzcUU.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-5-min-D6_TLQJ2.png"
+          alt="Young woman meditating with closed eyes during a group session"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+    <li class="gallery-list-item">
+        <picture>
+        <source
+          media="(min-width: 1336px)"
+          srcset="/YogaBloom/assets/gallery-desk-6-min-CBhj7f8c.png 1x, /YogaBloom/assets/gallery-desk-6@2x-min-BFdaDDyM.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/YogaBloom/assets/gallery-tab-6-min-euxXJHv_.png 1x, /YogaBloom/assets/gallery-tab-6@2x-min-CYZjWb4f.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/YogaBloom/assets/gallery-mob-6-min-D5EKMebn.png 1x, /YogaBloom/assets/gallery-mob-6@2x-min-CymPHyIO.png 2x"
+        />
+        <img
+          src="/YogaBloom/assets/gallery-desk-6-min-CBhj7f8c.png"
+          alt="Woman meditating in lotus pose at the center of a yoga group"
+          width="421"
+          height="448"
+        />
+      </picture>
+    </li>
+  </ul>
+  </div>
+</section>
+      <section class="about-us">
+  <div class="container about-us-section">
+    <div class="sectiot-title-about-us">
+      <h2 class="about-us-title">Why Yoga Helps You</h2>
+      <p class="text-title-about-us">
+        Four science-backed reasons to start your journey today
+      </p>
+    </div>
+    <ul class="about-us-list">
+      <li class="about-us-item">
+        <h3 class="about-us-title-list">1. Reduces Stress & Anxiety</h3>
+        <p class="about-us-text-list">
+          Regular yoga practice lowers cortisol levels and calms the nervous
+          system — helping you feel more grounded, focused, and emotionally
+          balanced.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="about-us-item">
+        <h3 class="about-us-title-list">2. Builds Strength & Flexibility</h3>
+        <p class="about-us-text-list">
+          Yoga gently tones your body while increasing mobility and posture
+          awareness — without strain or pressure. Great for beginners and
+          experienced movers alike.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="about-us-item">
+        <h3 class="about-us-title-list">3. Improves Sleep & Energy</h3>
+        <p class="about-us-text-list">
+          Mindful movement and breathing techniques improve sleep quality and
+          leave you feeling more refreshed, focused, and energized throughout
+          the day.
+        </p>
+      </li>
+      <li class="about-us-item">
+        <h3 class="about-us-title-list">4. Boosts Mental Clarity & Focus</h3>
+        <p class="about-us-text-list">
+          Yoga encourages present-moment awareness. Through mindful movement and
+          breathwork, it sharpens concentration, improves memory, and clears
+          mental fog.
+        </p>
+      </li>
+    </ul>
+    <div class="button-about-us">
+    <a href="#pricing" class="button-link-about-us">Join now</a></div>
+  </div>
+</section>
+      <section class="testimonials" id="testimonials">
+  <div class="container testimonials-container">
+    <div class="testimonials-title-container">
+      <h2 class="testimonials-title">Testimonials</h2>
+      <p class="testimonials-title-text">What our happy clients say</p>
+    </div>
+    <ul class="testimonials-list">
+      <li class="testimonials-item">
+        <p class="testimonials-text">
+          YogaBloom is a true sanctuary for the mind and body. The classes are
+          thoughtfully guided, the atmosphere is calming, and every session
+          leaves me feeling more centered, flexible, and recharged. Highly
+          recommended for anyone seeking balance and inner peace.
+        </p>
+        <div class="testimonials-info-container">
+        <img 
+        class="testimonials-foto"
+        srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAxAAADAQADAQAAAAAAAAAAAAAABgcFAgMECAEAAwEBAAAAAAAAAAAAAAAAAwQFBgL/2gAMAwEAAhADEAAAAL/k9UkmOOPkhwo3e3GW8Fe7UYppJCOisyhnLWolUhLrh7WqdvUd7YF0IFxzqUpjFOcusx4lry+rhgmeqBQh3HvWPsDiEsk/1Wpz9BEKPVBxQAZj/wD/xAA2EAACAQMCAwYDBAsAAAAAAAABAgMABAURIQYxQRITIlFxchBCgRQyM2EHFSAjUmKSsbLB0f/aAAgBAQABPwCr/O21iTHGoln8ui+pq7zl9JvLed0vQKewK+1XRGoupf6zUGcylqR2blnUfLJ4hWJ4itr91hlAin6Do3p8M/kzYxJDEdLiUbfyL51n84MRbBgoe4k+4D/kallu715rm9nk7Z5EgBfQCsZmL3GTLJAxaM6F4jurCrW+gvrVLiBtUYfUHqDTOVIIOhB2IrhnNnI27xTMPtEQ3J+ZfOr+7N7lbub5RIUT2psK4hgWTL2sbOo71VQFlLBdN/l1O9X/AA/ipUSaAyXKuGKrHpoAm55kEn8tRWXxr4u6jUxARyRLIE6jtEjQ+RrhK4VHvLfvNvAyCpm3rA5A2eWtJdSFLhH9r7GscSVBbn1rjcMbi0k1CmHxKeZ1PX0BFQ5m1ntrC8B7koWM0IBYgnmn1I2NcXT9/kFcBgewAe3toOe2vU1iT3WRikuGMCaaHU89uR9TU8gO4IIO9JIwdSOeu1T2rWWTvLcjZZWK+07isxjhe9wxRSFOjFl10Gx/1VpjslFkiYO1bSqgjQLqzlQSxJB2Pa15mp5jdzRvIAxiG8h5yP1b/lZFPukVib49nuHO3yfkeorBWrX2XsrdRqGlBb2rua4mxLThL2FdZI10cDqtRNsKvHKWd0wOmkMh+oWj4IW06VeL2l9BUUpSbQHTTQ1wHhHtLX9Z3UZWeeMCNDzRD8Mjw+JGaa10VzuY+h9K4hjurLFXxlhdP3RXcfx+GmPg9TVtiMpkpAllZSzHzVfCPU8hXC/6NIbC6W/y7pNcDTsQLvGn7E/4Evsb+1eVR/hp7R8f/8QAIxEAAgICAAYDAQAAAAAAAAAAAQIDBAAREiExQUJRBRATYf/aAAgBAgEBPwC3ccSCCAbkPU+selZYFjOWfIbtiB9FiwB5q2RSpLGrp0OVXL2yx8id4rDiAGXUH7kjyGVbj10ZQuwTvLMTV7LDsTtT/DkcrvvnnAJIiPWUqqrFuRBtjvnk0Ecy8LrvB8esfSQ6PsZDWSPvs/X/xAAkEQACAQMCBwEBAAAAAAAAAAABAgMABBEFEhMhMTJBUXEQsf/aAAgBAwEBPwC3twy8STtpZIRgbABUlrFKOgB8EVIjRuUbqKZdqYA7RTRts3EfDioY5FRQ6Mv0Yq5s1mcNuwcYqGbeit5Awa0uGOUvI69hGP7V4oEgB6NV9csZyqMQF5cvdJI0ZyprTtW4MTqYMktnO7FX+sT3fIII1Ho5P5//2Q== 1x, data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAHEAcAMBIgACEQEDEQH/xAA1AAACAwEBAQEAAAAAAAAAAAAABwQFBgMBAggBAAIDAQEBAAAAAAAAAAAAAAQFAAIDBgEH/9oADAMBAAIQAxAAAAB/gSBVYZeVss/SREx9v5B6D6299h+RGbd9U7Jcr54DAUp7VUri/YvZMJmVnSeWLwOtYS1+c7P7ll9Nz5/H584Us27VLufpU+Nyn19I2FOvmdgTpYVDZzh+Cw+GMsbVkOBMNVYVMjdoiov1irS7LxgXdDfizijHWomuDzqspcmWlp9jLi+XupzOiHN2cLrES7HaH9290k25pLgyVozqqXXNrLsjPa3L9ZF3fOh0me9MsNRgNNgttLejYOYDOVLczTNJme8SSiP6QZ1Ve6r+jmd2kqluK+1KWfWdiE23/QeEZ2/OADBXncwyeKoxf0O4Wypxi/j35K6/vCtNboKoXYw9C04oAIVgEgBIeB5f87cwTfQP0V0Bz8/APaAEn//EADoQAAIBAwIDBAcGBQUBAAAAAAECAwAEEQUSITFBBiJRYRMyQlJxcpEQFCCBscEHIzRzoTAzRFPRY//aAAgBAQABPwD7ZZYoULyOqKOZJwKu+1dvGSttEZT7x7q1P2j1WblKsY8EWm1TU253s/5ORQ1TUx/zZ/zcmoe0mqwlcyrIB0Zf/MVY9q7VsJcwmI++veFQyxTIJInV1PIqcj8Wp6xBYDaAHnI4J4eZq6vbq9kMk8hY9B0HwFcAMk02o6ejbWu4Q3gXFJNE/quD8DWKIFMKtL+7sZfSW8pU9R0PxFaNr0GpjYcR3AGSnj5j8GsauunxBUwZ3HcHu+Zos8rtJIxZ2OSTzNXt/a2EDTXEgRR9TWs9p7vUmWK2UxRA+OC/xo/eVTdLG6g9elJcz27B4pGVl5YOK0HtSl2Utrzuzew/R6JFPTGo5ZIpFkjcq6nII4EEVoOuLqkOyTAuY/XHvD3h9l3dRWlvLM5wka5NT3Mt5cSTynLMfoOgqaRYIJJW9VVJNa7qU2oXhZifRqcAVDZzlxhMEHbjgO8POp5tkZR5G3DusrHBU0uHU5bpw+I6UEkAVxyzwYHka7Oa4b2EQT8Jk4buj01MaLVZX01ldRXER7yHl0I6g1a3cN3axXEZyki5Fdsb3abewjb/AOsn6KKiHCu0bMmmMApIY0IrUy2yYG5tuWblk1e6Lcxx4jiZhhQQqnkoxnIq57MXihGuDDACMICSWf4KATV5YfcQsiyPlSM4BUnceWDUXoZDIoBAI4g8+PAj41YzPa3agHiHyDSSb41PkKc0xrNdhtQyLiwc8v5sf71rFx951u/fospjHwTu1EOArWBixmbbnbFIQD4heFaBPbnUZI57eGUCEyRhnEeCpBNWGr296rCEgOqb9mc93owPUGntr+eO5urW5K3DlQJGTe7DqvI7QOgrWdHA0Gd7jv3LBCzHHRgelSKwZBuYlTtHXkM8amlGIHPsnn1GTgr+9WF4k8MbKwIOdp8akNM1Fq7OXhttZsXzgNIEPwfu1BIZZZJCeLuW+pqEcBWosi2k+9sARO30FWzi11K2nK5WGZZNpGQ6A8R+Yq0it9sctud4dF2MOOUx3ceWK0q5AvJLQ4O3OGU55ceNdqZJDp86pzABA+U5qXEciRgFpBlpMDkQeAq4A9BuzxYtgjlw5iuzj3JaW1dF7iAk+berUpp2otUEpjmicc1cH6GrRShKnmCRUPKtaiL2jYHDk1aiQJ2MUeIp0XaD7IrsvrBsIWsr9wIQEaNm9gSkjB8BmpdUltzIlvZQwybiAuN7Nnr3SK1m7vEgjaWIFTEd5x7fw8BXokTgZJvTyOCE28CPM+NfcJlXMkmOGNo6fnWi6nbWA9DLFjKgGRRxPUbhRlSVBJG4ZW5EcjUhrNRAs6qOZIFX9ubXWL+D3Z3I+DHIqHkKnjEkZRvVKtkVLp1oZIAcogb0khBxsAO0H4A1qVvBbaW6s+bieWNfMkcW5Vp2t32kILYx+mXaWCHg8CjkCf8AO2pLyO+sHvbwbXMrxx4cFG4eyOZ8Cas4EMkkvMjujPMHr+dTx8DUuRI3kcfStNv2t34nMTeuPDzFO1ZrQYPvWsafD0M6E/BTk12zsjFqEF6o7sy7H+dKgPAViQjC7fif/KaxSCcyCFmxGFjIAz4HdnGavdAaK7M88Mr28kRAEA70DEk5UeI4GtM0yVogIY41G4MZlYsXbz3cR586umae4IDD0SErCi+qi5z3fI86UBFwOpzT8VJ8qmXFRNhq0+53xeiY8UHd+Ws12AsfSXtxfOO7CmxPnetXsF1Owlt/axuQ+DjlUavG7I6kMpIIPQikPClP2arK0Wm30gPEW8mPjtpF41M2CnzAf4okbanXI40W2kk9MmrWZkZHHMGoVad40iUs0hAQDmSa0PTV0rS4LMY3AbpWHtOef2dotGZj99gXLAfzV8ce1UZpT9mtnGk339lqXmauTwT+4tN6tTruXI58KuDhHz5VCxABrsB2amt4ItTvo8SEZt0PRT7f4NU0Elmns1483jH6rXEHBBBHMGg1dpptmkyD35ET/O79qHOpDxXP/YtMe59Kc8KuopJlKRRs8jOoVFGSSTwAArsT/Dt4DDf61EN44xWp/WT8V9pljdruddr9HXgautAvYSTEBKvlwP0rtoJoba0jkjZMzMSCMeqKU8BT8WHk/wC1Q2d5dn0drbSzMTjEaFv0rS/4b65esGu9lnCff7z/AEFaJ2Q0TQO9aw77kjvTycX/ANHVP6C4+UfrWtf7r/NWi/1cfzVpH9DH+L//xAArEQABAwIEBQMFAQAAAAAAAAABAAIDBBEFISIxEjJBUXEQEzMgQ2FioZH/2gAIAQIBAT8AVViEcF2t1P7dlJXVcpOsgdm5L3Zb/I//AFRV9VGfkLh2dmqXEI57Ndpf27+mIVZgYGsOt38CpaY1Dzc6RuUyGONoaxosp6WOVtiLHoVJG6N5a7cIGxWH1ZnjLXnW3+hVkplqZHdAbDwFQ/E4DutrAOzKYS4EE5rEWcj7IBUchiqI3dCbHwU7mKw82Dvyi9t2m+xUZuXFVTg6FzWjiKAXUWVVGYqmVv7ZeCopCy9ihUBjAQbncrjdwuF+YqMqoiz4gqeMyTxt/ZYnSmRolYNTRmO4QQ3HlDdMNinsuxUNN7QMjhqO3j0qsNDyXw2a7q3oV7EscjQ9hGaCjje86WkqOGwHF9B2K+6m8o8ev//EAC8RAAICAAMGBAQHAAAAAAAAAAECAAMEESESEzFRYXEFECJBIDJCkTNEUnKhscH/2gAIAQMBAT8AlOFezU6LEw1K/Rn1Os2E/QPtHw1L/QB20l+Fer1DVfLC0bxizfKJY4rXP7CbxmzLE/5EvYHmINQCIBnMZh90wZR6W/gylN3Sg6ZnuY+XpJmYYElRkJYApBUekzDHNSvIwCYqrbocdMx3EaWrmgPIyqh3DqB7A9pamSqBxlOCxKHbZCunAwDKHhK326UbpEI1BhVSSTwmDwAD1WvxX2Mxa6AyxQy7Y4jjMS4rosbpMJdsk1sdDw7wygZ3VDm6/wBw6S9c1MR8rGQ8Mp4liA1hpQ5qp1PM+VWKKgK+o5zw8124ujJgfVn9tYZi8Xh6FO8tVehOsxfiBssfckqpXIn3PwV/On7hPyY7Sz8R+58//9k= 2x"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAxAAADAQADAQAAAAAAAAAAAAAABgcFAgMECAEAAwEBAAAAAAAAAAAAAAAAAwQFBgL/2gAMAwEAAhADEAAAAL/k9UkmOOPkhwo3e3GW8Fe7UYppJCOisyhnLWolUhLrh7WqdvUd7YF0IFxzqUpjFOcusx4lry+rhgmeqBQh3HvWPsDiEsk/1Wpz9BEKPVBxQAZj/wD/xAA2EAACAQMCAwYDBAsAAAAAAAABAgMABAURIQYxQRITIlFxchBCgRQyM2EHFSAjUmKSsbLB0f/aAAgBAQABPwCr/O21iTHGoln8ui+pq7zl9JvLed0vQKewK+1XRGoupf6zUGcylqR2blnUfLJ4hWJ4itr91hlAin6Do3p8M/kzYxJDEdLiUbfyL51n84MRbBgoe4k+4D/kallu715rm9nk7Z5EgBfQCsZmL3GTLJAxaM6F4jurCrW+gvrVLiBtUYfUHqDTOVIIOhB2IrhnNnI27xTMPtEQ3J+ZfOr+7N7lbub5RIUT2psK4hgWTL2sbOo71VQFlLBdN/l1O9X/AA/ipUSaAyXKuGKrHpoAm55kEn8tRWXxr4u6jUxARyRLIE6jtEjQ+RrhK4VHvLfvNvAyCpm3rA5A2eWtJdSFLhH9r7GscSVBbn1rjcMbi0k1CmHxKeZ1PX0BFQ5m1ntrC8B7koWM0IBYgnmn1I2NcXT9/kFcBgewAe3toOe2vU1iT3WRikuGMCaaHU89uR9TU8gO4IIO9JIwdSOeu1T2rWWTvLcjZZWK+07isxjhe9wxRSFOjFl10Gx/1VpjslFkiYO1bSqgjQLqzlQSxJB2Pa15mp5jdzRvIAxiG8h5yP1b/lZFPukVib49nuHO3yfkeorBWrX2XsrdRqGlBb2rua4mxLThL2FdZI10cDqtRNsKvHKWd0wOmkMh+oWj4IW06VeL2l9BUUpSbQHTTQ1wHhHtLX9Z3UZWeeMCNDzRD8Mjw+JGaa10VzuY+h9K4hjurLFXxlhdP3RXcfx+GmPg9TVtiMpkpAllZSzHzVfCPU8hXC/6NIbC6W/y7pNcDTsQLvGn7E/4Evsb+1eVR/hp7R8f/8QAIxEAAgICAAYDAQAAAAAAAAAAAQIDBAAREiExQUJRBRATYf/aAAgBAgEBPwC3ccSCCAbkPU+selZYFjOWfIbtiB9FiwB5q2RSpLGrp0OVXL2yx8id4rDiAGXUH7kjyGVbj10ZQuwTvLMTV7LDsTtT/DkcrvvnnAJIiPWUqqrFuRBtjvnk0Ecy8LrvB8esfSQ6PsZDWSPvs/X/xAAkEQACAQMCBwEBAAAAAAAAAAABAgMABBEFEhMhMTJBUXEQsf/aAAgBAwEBPwC3twy8STtpZIRgbABUlrFKOgB8EVIjRuUbqKZdqYA7RTRts3EfDioY5FRQ6Mv0Yq5s1mcNuwcYqGbeit5Awa0uGOUvI69hGP7V4oEgB6NV9csZyqMQF5cvdJI0ZyprTtW4MTqYMktnO7FX+sT3fIII1Ho5P5//2Q==" 
+        alt="Donna Norman" 
+        width="56"
+        height="56"
+        />
+        <div class="testimonials-name-container">
+          <h5 class="testimonials-name">Donna Norman</h5>
+          <p class="testimonials-profession">Yoga Enthusiast</p>
+        </div>
+        </div>
+      </li>
+      <li class="testimonials-item">
+        <p class="testimonials-text">
+          I’ve tried many yoga studios, but YogaBloom stands out with its
+          welcoming energy and inspiring instructors. Every class feels like a
+          journey inward. It’s now my favorite part of the week.
+        </p>
+        <div class="testimonials-info-container">
+        <img 
+        class="testimonials-foto" 
+        srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAyAAACAgMBAAAAAAAAAAAAAAAABwUGAwQIAgEAAgMBAAAAAAAAAAAAAAAAAwQAAQIF/9oADAMBAAIQAxAAAAB/rn0khksFQlbQj0IzonmK5aE+CljySKnIiU5PU192vXOMVzDgpzaLJKebEw110nywIsfcafvsr49bLhMG1juJlmLYJERDBqph5hUZwFX/AP/EADEQAAIBBAAEAwYFBQAAAAAAAAECAwAEBREGEiIxEyFBBxAUUWFxJDIzQ5FCgYKSof/aAAgBAQABPwCuJ/aLY4e5+Cs4xc3IOpDvoirOcXZa5ceJfSkt1BASiKPqBUmdvnZnCkxg9TAarh/ifPRNALLITBS/KVdjIg+6tVvmrYvDbzyhZZB0kdj7vaTxRPhscthYycl5cjrkHeOOsVhI7qTx5pedY+UsvoST61Ja275CKK7lWKEqZpCxC9/yLRXFQWOowHi1oLGAeasfPBhM9bydrK66XDFT4R7bPKT+WsrKY5XRjoj1FcCcTtlIprC5Ym5twCrk/njriu+ny/FV5Kh6DMUj+QRPIVbg4zDTuPOWRpdN9oyg/hnqC3ny+Xys1jIILaOQwBgRohewWp7GNYlQ3qFEcF4Sw1K3ZvN9nyHzOjWet7B8JO0SuHjKNtvL1CldGsbfLe2EInkJdAE2f4G6wNxPjOIcddo20E6q+j3R+k1bwKJU5tmTm6vvWTvYIPhbFtFXkHiH5IHEsp/5XDWSgsb3KY66l5IrrWm9A6mp8TMLWGcyKQ5PKB0hR9x57ria6gtrV7KN+aWcqX89lVB3VvcyQjpO12CVPY6qzyieIQV5X6QhX577f3q/xvwHEuTSRNRwSNICe3I3UKyd0XmkuyTuYMsIPpHvRY/emYu5Y96xN28kXg+O4TuE5yAD9qvwfjJSTvbb3StymuEMMctxJirYDaGZZJfokfU1ce4GW/x73VrGXmRQJY1HVLEnVoVk7iWe6Jca0qgKOy+XYUBWPk5Z1Teix0CTob+tXDmadm+td/Id69mfCcmEsGyF7GVvrpNKjd4ovdxl7M7POPJfYyRLa9/qB/SlrJ8H8T4d/wAXipwq/uIpkT/ZKnQOQViZZOxXWwaxXCHE2WcLaYqfR/ckUxoP8mrhH2Y2OFlS9yUiXV6p2gH6UR93/8QAIhEAAgIBBAIDAQAAAAAAAAAAAQIAAxEEEiFBEDEiQlFx/9oACAECAQE/ALLFVWJPoRbEVV3KWJ7JluosqZdq5VhxEYMoYdy242MqAcdy1mrcKF+oIOJUj20Zb3uypiGxBjbE05GqYkfHHH8mppFteOx6iDCKD+DyADzD4//EACQRAAICAQMDBQEAAAAAAAAAAAECAAMRBBIxEEFRExQyQlKh/9oACAEDAQE/AK62dlAHJnoElgG2geBE0yOGDNhlODHUoxU9pRVsDNmUKlqEl/swIl7V1ajC8bACPBjiuw53Rr19oMfLP9mkuNNuTweZYc2Ow/Rhx03EDHYwdP/Z 1x, data:image/jpeg;base64,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 2x"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAyAAACAgMBAAAAAAAAAAAAAAAABwUGAwQIAgEAAgMBAAAAAAAAAAAAAAAAAwQAAQIF/9oADAMBAAIQAxAAAAB/rn0khksFQlbQj0IzonmK5aE+CljySKnIiU5PU192vXOMVzDgpzaLJKebEw110nywIsfcafvsr49bLhMG1juJlmLYJERDBqph5hUZwFX/AP/EADEQAAIBBAAEAwYFBQAAAAAAAAECAwAEBREGEiIxEyFBBxAUUWFxJDIzQ5FCgYKSof/aAAgBAQABPwCuJ/aLY4e5+Cs4xc3IOpDvoirOcXZa5ceJfSkt1BASiKPqBUmdvnZnCkxg9TAarh/ifPRNALLITBS/KVdjIg+6tVvmrYvDbzyhZZB0kdj7vaTxRPhscthYycl5cjrkHeOOsVhI7qTx5pedY+UsvoST61Ja275CKK7lWKEqZpCxC9/yLRXFQWOowHi1oLGAeasfPBhM9bydrK66XDFT4R7bPKT+WsrKY5XRjoj1FcCcTtlIprC5Ym5twCrk/njriu+ny/FV5Kh6DMUj+QRPIVbg4zDTuPOWRpdN9oyg/hnqC3ny+Xys1jIILaOQwBgRohewWp7GNYlQ3qFEcF4Sw1K3ZvN9nyHzOjWet7B8JO0SuHjKNtvL1CldGsbfLe2EInkJdAE2f4G6wNxPjOIcddo20E6q+j3R+k1bwKJU5tmTm6vvWTvYIPhbFtFXkHiH5IHEsp/5XDWSgsb3KY66l5IrrWm9A6mp8TMLWGcyKQ5PKB0hR9x57ria6gtrV7KN+aWcqX89lVB3VvcyQjpO12CVPY6qzyieIQV5X6QhX577f3q/xvwHEuTSRNRwSNICe3I3UKyd0XmkuyTuYMsIPpHvRY/emYu5Y96xN28kXg+O4TuE5yAD9qvwfjJSTvbb3StymuEMMctxJirYDaGZZJfokfU1ce4GW/x73VrGXmRQJY1HVLEnVoVk7iWe6Jca0qgKOy+XYUBWPk5Z1Teix0CTob+tXDmadm+td/Id69mfCcmEsGyF7GVvrpNKjd4ovdxl7M7POPJfYyRLa9/qB/SlrJ8H8T4d/wAXipwq/uIpkT/ZKnQOQViZZOxXWwaxXCHE2WcLaYqfR/ckUxoP8mrhH2Y2OFlS9yUiXV6p2gH6UR93/8QAIhEAAgIBBAIDAQAAAAAAAAAAAQIAAxEEEiFBEDEiQlFx/9oACAECAQE/ALLFVWJPoRbEVV3KWJ7JluosqZdq5VhxEYMoYdy242MqAcdy1mrcKF+oIOJUj20Zb3uypiGxBjbE05GqYkfHHH8mppFteOx6iDCKD+DyADzD4//EACQRAAICAQMDBQEAAAAAAAAAAAECAAMRBBIxEEFRExQyQlKh/9oACAEDAQE/AK62dlAHJnoElgG2geBE0yOGDNhlODHUoxU9pRVsDNmUKlqEl/swIl7V1ajC8bACPBjiuw53Rr19oMfLP9mkuNNuTweZYc2Ow/Rhx03EDHYwdP/Z" 
+        alt="Sophie Delgado" 
+        width="56"
+        height="56"
+        />
+        <div class="testimonials-name-container">
+          <h5 class="testimonials-name">Sophie Delgado</h5>
+          <p class="testimonials-profession">Marketing Specialist</p>
+        </div>
+        </div>
+      </li>
+      <li class="testimonials-item">
+        <p class="testimonials-text">
+          YogaBloom helped me reconnect with myself. The sessions are
+          well-paced, the space is beautiful, and the community is truly
+          supportive. A perfect place to grow both physically and mentally.
+        </p>
+        <div class="testimonials-info-container">
+        <img 
+        class="testimonials-foto" 
+        srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAxAAACAwEBAQAAAAAAAAAAAAAABgQFBwIBAwEAAwEBAAAAAAAAAAAAAAAAAwQFAgb/2gAMAwEAAhADEAAAAN/Xes9OvOruxpT6vOaxND3kWCdUVoB46jGWovsW9OkozFUi2YnlCRskDRM8RsJnF6owujgWMS0s87GNmCYfaUFHk1bBZtd2sCiZwCB//8QAMhAAAgEDAwIDBgQHAAAAAAAAAQIDAAQRBRIhBjEQE3IUIzJBQmEHIlKRQ4GhorHB0f/aAAgBAQABPwCtU6hhtGMUCiWUcH9K1darqV0xMt0+P0g7R+woluTk5q21nVLI+5u5AB9LHcv7GtF6qgvSltdAQznAUj4G8OotTayhW3ibE8oySO6L4nsaapDiujtfOoQPZzvmeEZBPd0rVrk3eo3U3cFyF9K8CsVd3UVrGHkDHLBVVeST/wAFX2vXsURmitkCAAgNuYsP5EVaa0k8zRSpsIcpuBBG4HGDV0+0GtE1drDXbCdThfOVX9L8GucnPemYKpY9hV28t5fgEgOWbapP8NOCDUtu6NZWTlWXax4BUgq27+o4pAxeRd4DFXdW475z/kCjcbrCGQ/Ne2c00zNINnxZGK1S2a11G6hI4Dkr6TyK7g1fxtBfxT7sIkv9rZVqubSe2l82W7llQo5QNtxGccFAAMfc55qZHe5gKoclirFlJDKxrUZvdKgHAAFdLaY2qdQ6bagZUzh5PQn5mrqTSWu4FuYhmeMcgfUtBW25z861yOL2KUSDZL2VyMhKt455JYbYxLC0abmLHI2M2AQRzjJx9qa8nS4MUcRBBwSxxjB5BH2NXOkXb2vnLgnYG2Cvw76UfS7RtQvI9t1cJgIRykfhq3TUVyzz2ziKVs7x9L5FXuk30fme1WjbCBk43LwKtrESGSaSJgMFIxnPuz/tu5qx6Y13VNWYJYz+X5iCSVlKLwAGbLVovTUdivm3brLcF95x8CH5BfSPD//EACMRAAICAQIGAwAAAAAAAAAAAAECAAMRBCEFEBITMXEiUWH/2gAIAQIBAT8AqqBHU0GB4EalLBuMH7joUYqZsB+AS7WWNZ8WwuZw/UPaSj7kDIMu09dhBJwQILFKb+pavTYwVpwxqawxdsMdhNTcWswjbDk1SHuE+ZSMIPXL/8QAIhEAAgEEAQQDAAAAAAAAAAAAAQIDAAQRITEFEFFhEyJx/9oACAEDAQE/AJZSv1Xmjk8k0s8kR0cjwajkWRA68Gts3smoLCNYssuWxXVbZIEEiaBOCKtruaFWAXIJzRjcSYUexUDloVLLjxXWUuJiixplF21WduEhy67be+yTOPjAOBU7EyN+9v/Z 1x, data:image/jpeg;base64,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 2x"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAxAAACAwEBAQAAAAAAAAAAAAAABgQFBwIBAwEAAwEBAAAAAAAAAAAAAAAAAwQFAgb/2gAMAwEAAhADEAAAAN/Xes9OvOruxpT6vOaxND3kWCdUVoB46jGWovsW9OkozFUi2YnlCRskDRM8RsJnF6owujgWMS0s87GNmCYfaUFHk1bBZtd2sCiZwCB//8QAMhAAAgEDAwIDBgQHAAAAAAAAAQIDAAQRBRIhBjEQE3IUIzJBQmEHIlKRQ4GhorHB0f/aAAgBAQABPwCtU6hhtGMUCiWUcH9K1darqV0xMt0+P0g7R+woluTk5q21nVLI+5u5AB9LHcv7GtF6qgvSltdAQznAUj4G8OotTayhW3ibE8oySO6L4nsaapDiujtfOoQPZzvmeEZBPd0rVrk3eo3U3cFyF9K8CsVd3UVrGHkDHLBVVeST/wAFX2vXsURmitkCAAgNuYsP5EVaa0k8zRSpsIcpuBBG4HGDV0+0GtE1drDXbCdThfOVX9L8GucnPemYKpY9hV28t5fgEgOWbapP8NOCDUtu6NZWTlWXax4BUgq27+o4pAxeRd4DFXdW475z/kCjcbrCGQ/Ne2c00zNINnxZGK1S2a11G6hI4Dkr6TyK7g1fxtBfxT7sIkv9rZVqubSe2l82W7llQo5QNtxGccFAAMfc55qZHe5gKoclirFlJDKxrUZvdKgHAAFdLaY2qdQ6bagZUzh5PQn5mrqTSWu4FuYhmeMcgfUtBW25z861yOL2KUSDZL2VyMhKt455JYbYxLC0abmLHI2M2AQRzjJx9qa8nS4MUcRBBwSxxjB5BH2NXOkXb2vnLgnYG2Cvw76UfS7RtQvI9t1cJgIRykfhq3TUVyzz2ziKVs7x9L5FXuk30fme1WjbCBk43LwKtrESGSaSJgMFIxnPuz/tu5qx6Y13VNWYJYz+X5iCSVlKLwAGbLVovTUdivm3brLcF95x8CH5BfSPD//EACMRAAICAQIGAwAAAAAAAAAAAAECAAMRBCEFEBITMXEiUWH/2gAIAQIBAT8AqqBHU0GB4EalLBuMH7joUYqZsB+AS7WWNZ8WwuZw/UPaSj7kDIMu09dhBJwQILFKb+pavTYwVpwxqawxdsMdhNTcWswjbDk1SHuE+ZSMIPXL/8QAIhEAAgEEAQQDAAAAAAAAAAAAAQIDAAQRITEFEFFhEyJx/9oACAEDAQE/AJZSv1Xmjk8k0s8kR0cjwajkWRA68Gts3smoLCNYssuWxXVbZIEEiaBOCKtruaFWAXIJzRjcSYUexUDloVLLjxXWUuJiixplF21WduEhy67be+yTOPjAOBU7EyN+9v/Z" 
+        alt="Rachel Kimura" 
+        width="56"
+        height="56"
+        />
+        <div class="testimonials-name-container">
+          <h5 class="testimonials-name">Rachel Kimura</h5>
+          <p class="testimonials-profession">Freelance Illustrator</p>
+        </div>
+        </div>
+      </li>
+      <li class="testimonials-item">
+        <p class="testimonials-text">
+          Whether you're new to yoga or a long-time practitioner, YogaBloom
+          offers something special. The mindful approach and soothing guidance
+          make each class a peaceful escape from daily stress.
+        </p>
+        <div class="testimonials-info-container">
+        <img 
+        class="testimonials-foto" 
+        srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAxAAACAwEBAQAAAAAAAAAAAAAABgQFBwMIAgEBAQEBAQAAAAAAAAAAAAAAAwQAAgH/2gAMAwEAAhADEAAAAN/q/hM2mwMIdjTXL7OZiFppAN6nqLElc+rj2lN811M8+adoaXRiAKPPKN089z1V2pWFUTJjNNveyuBkKZbtFDe5P3A6LLVQ7JkA6P8A/8QAMhAAAgEDAgMGBAUFAAAAAAAAAQIDBAURABIGITETIjJBUXEQFEJSByNhgZEzU3Oho//aAAgBAQABPwDVbdY4CUiAdx19Bq4XKYxPJPU7E9S2xRqlqYJp3EVRG7Ki7grhiPfGoa+rgP5c7Y9CcjVuv0U8gp5gI5PI/Sfhe69qWNIYziWQjJ+1dV9ZFQUFRWTZKQxs7AdTgdB+p1PX3XiK5IWJd2J2RjwIPRR5DScN3GijiqqWoHzKLz2/6wTqwXc3Wh7SSPZPE+yZcct2M5Gpf6kv+M6slwaoi7CRvzEHInzGrjP29bO/l2wC+w5DXHDkcL1w3Y3GIf8AQHXCkFwo0hmjogwqVDvKyZAj8gp3DTG/LchEIkalP1ZVAB+6sW/katV7gtd+udBPMFglnZ0z9DacgtIR0MerfMYKmFweW7B9jpj3zn+4NcY1sk9omp4E3RPOImlPIbkOSqebEFeZ6a4WvDy2o0KNvlgyAm7axXqpHI6jrKlaftahJEAB3szMzEDn4Siaa5SzXNq+Ub2MoYqfNem3+OWrWs8ORR1AeAwo6K/gZJPCQRkqfUap3aWNXAxkkbepBBwQf1B1eGjoK2oEzbUEuc4PQ89Xq6JNbRFAGKUxkOXGNzSMcH9gdcP2ypFeGnhli7aDfE5BXf6sp1baLYjI+5255Lkt199XngJIcSW+q77PhKd+ZY9cKdcNUNbQUBhrk7NxLtRcg4QOHHMe51Zou2mpoQPG5kPsx3nXG1geuo0rKYEz04OUAzvQ6jj33GnWRciplR2iLhDhOS825ZIOMHrrdTsgM64Gd4LYDK33Efdz6jrqs4lpbeivPTzsSuCYUBXI9SSMa4eub3ZayveMI6uYIkB3bI8Byfdj1OiI3RkYKykdNcO2r5GE1EwKvIO6hJJVfhxV+HlBdxVT0m2Grl7zfY7aqbRxlbXWnrKCd4osgTZLggdMMoPPVOJ2jdCgjdVysQHeBHXdjPM6t1tvVfNGkVomdSVBlPcQKR1y2rLwnS28rU1YjlnHNQo7qn4f/8QAHREBAAMAAwADAAAAAAAAAAAAAQACEQMQEiExQf/aAAgBAgEBPwCW5AZvxvVnBlrgu7KrUB65V9Z+Rr7tsVrhu5D6JapYxnkIB1//xAAdEQACAgIDAQAAAAAAAAAAAAABAgARECEDEjET/9oACAEDAQE/AIvESJsEjAFkRUtQQRUcKxZhjiVet3uBvmlQKGB1Vw+xWKmxFYsNxmPmP//Z 1x, data:image/jpeg;base64,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 2x"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADgAOAMBIgACEQEDEQH/xAAxAAACAwEBAQAAAAAAAAAAAAAABgQFBwMIAgEBAQEBAQAAAAAAAAAAAAAAAwQAAgH/2gAMAwEAAhADEAAAAN/q/hM2mwMIdjTXL7OZiFppAN6nqLElc+rj2lN811M8+adoaXRiAKPPKN089z1V2pWFUTJjNNveyuBkKZbtFDe5P3A6LLVQ7JkA6P8A/8QAMhAAAgEDAgMGBAUFAAAAAAAAAQIDBAURABIGITETIjJBUXEQFEJSByNhgZEzU3Oho//aAAgBAQABPwDVbdY4CUiAdx19Bq4XKYxPJPU7E9S2xRqlqYJp3EVRG7Ki7grhiPfGoa+rgP5c7Y9CcjVuv0U8gp5gI5PI/Sfhe69qWNIYziWQjJ+1dV9ZFQUFRWTZKQxs7AdTgdB+p1PX3XiK5IWJd2J2RjwIPRR5DScN3GijiqqWoHzKLz2/6wTqwXc3Wh7SSPZPE+yZcct2M5Gpf6kv+M6slwaoi7CRvzEHInzGrjP29bO/l2wC+w5DXHDkcL1w3Y3GIf8AQHXCkFwo0hmjogwqVDvKyZAj8gp3DTG/LchEIkalP1ZVAB+6sW/katV7gtd+udBPMFglnZ0z9DacgtIR0MerfMYKmFweW7B9jpj3zn+4NcY1sk9omp4E3RPOImlPIbkOSqebEFeZ6a4WvDy2o0KNvlgyAm7axXqpHI6jrKlaftahJEAB3szMzEDn4Siaa5SzXNq+Ub2MoYqfNem3+OWrWs8ORR1AeAwo6K/gZJPCQRkqfUap3aWNXAxkkbepBBwQf1B1eGjoK2oEzbUEuc4PQ89Xq6JNbRFAGKUxkOXGNzSMcH9gdcP2ypFeGnhli7aDfE5BXf6sp1baLYjI+5255Lkt199XngJIcSW+q77PhKd+ZY9cKdcNUNbQUBhrk7NxLtRcg4QOHHMe51Zou2mpoQPG5kPsx3nXG1geuo0rKYEz04OUAzvQ6jj33GnWRciplR2iLhDhOS825ZIOMHrrdTsgM64Gd4LYDK33Efdz6jrqs4lpbeivPTzsSuCYUBXI9SSMa4eub3ZayveMI6uYIkB3bI8Byfdj1OiI3RkYKykdNcO2r5GE1EwKvIO6hJJVfhxV+HlBdxVT0m2Grl7zfY7aqbRxlbXWnrKCd4osgTZLggdMMoPPVOJ2jdCgjdVysQHeBHXdjPM6t1tvVfNGkVomdSVBlPcQKR1y2rLwnS28rU1YjlnHNQo7qn4f/8QAHREBAAMAAwADAAAAAAAAAAAAAQACEQMQEiExQf/aAAgBAgEBPwCW5AZvxvVnBlrgu7KrUB65V9Z+Rr7tsVrhu5D6JapYxnkIB1//xAAdEQACAgIDAQAAAAAAAAAAAAABAgARECEDEjET/9oACAEDAQE/AIvESJsEjAFkRUtQQRUcKxZhjiVet3uBvmlQKGB1Vw+xWKmxFYsNxmPmP//Z" 
+        alt="Emma L. Hart"
+        width="56"
+        height="56" 
+        />
+        <div class="testimonials-name-container">
+          <h5 class="testimonials-name">Emma L. Hart</h5>
+          <p class="testimonials-profession">
+            University Student & Part-time Barista
+          </p>
+        </div>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
+      
+<section class="pricing-section">
+    <div class="container prising-container" id="pricing">
+        <div class="pricing-title">
+            <h4 class="title-top">Affordable</h4>
+            <div class="pricing-title-part">
+                <h2 class="title-one">Pricing Plans</h2>
+                <p class="discription">Choose the perfect plan for your yoga journey.</p>
+            </div>
+        </div>
+        <ul class="plan-cards">
+            <li class="plan-card">
+                <div class="plan-card-container">
+                    <div class="title-card-container">
+                        <h3 class="title-card">One Session</h3>
+                        <p class="price">$10</p>
+                    </div>
+                    <ul class="plan-card-list">
+                        <li class="plan-card-list-item"><svg class="icon-check">
+                                    <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                                </svg>1 group session</li>
+                        <li class="plan-card-list-item"><svg class="icon-check">
+                                <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                            </svg>10% discount for next 2 Sessions</li>
+                        <li class="plan-card-list-item"><svg class="icon-check">
+                                <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                            </svg>Community support group</li>
+                    </ul>
+                </div>
+                <button type="button" class="join-btn" data-modal-open-10>Join</button>
+            </li>
 
+            <li class="plan-card">
+                <div class="plan-card-container">
+                    <div class="title-card-container">
+                        <h3 class="title-card">8 Sessions Package</h3>
+                        <p class="price">$65</p>
+                    </div>
+                    <ul class="plan-card-list">
+                        <li class="plan-card-list-item">
+                            <svg class="icon-check">
+                                <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                            </svg>6 Group Sessions
+                        </li>
+                        <li class="plan-card-list-item">
+                            <svg class="icon-check">
+                                <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                            </svg>2 Individual Sessions
+                        </li>
+                        <li class="plan-card-list-item">
+                            <svg class="icon-check">
+                                <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                            </svg>Priority customer support
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="join-btn" data-modal-open-65>Join</button>
+            </li>
+
+            <li class="plan-card plan-card-three">
+                <div class="plan-card-container plan-card-container-three">
+                <div class="title-card-container plan-card-right">
+                    <h3 class="title-card title_card">12 Sessions Package</h3>
+                    <p class="price price_item">$80</p>
+                    <button type="button" class="join-btn btn-three" data-modal-open-80>Join</button>
+                </div>
+                <ul class="plan-card-list last-list">
+                    <li class="plan-card-list-item">
+                        <svg class="icon-check">
+                            <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                        </svg>8 Group Sessions
+                    </li>
+                    <li class="plan-card-list-item">
+                        <svg class="icon-check">
+                            <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                        </svg>4 Individual Sessions
+                    </li>
+                    <li class="plan-card-list-item">
+                        <svg class="icon-check">
+                            <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                        </svg>Monthly yoga challenges
+                    </li>
+                    <li class="plan-card-list-item">
+                        <svg class="icon-check">
+                            <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                        </svg>Exclusive member discounts
+                    </li>
+                    <li class="plan-card-list-item">
+                        <svg class="icon-check">
+                            <use xlink:href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-Check" width="24px" height="24px"></use>
+                        </svg>Community support group
+                    </li>
+                </ul>
+                </div>
+                <button type="button" class="join-btn join_btn" data-modal-open-80>Join</button>
+            </li>
+        </ul>
+    </div>
+</section>
+      <div class="backdrop is-hidden" data-modal-10>
+  <div class="modal">
+    <button type="button" class="modal-button-close" data-modal-close-10>
+      <svg class="modal-close-icon" width="32" height="32">
+        <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-cloze"></use>
+      </svg>
+    </button>
+    <!---->
+    <div class="modal-block">
+      <h2 class="modal-text-header">Join Now!</h2>
+      <div class="modal-text">
+        <p class="modal-text-session">One Session</p>
+        <p class="modal-text-price">$10</p>
+      </div>
+      <!---->
+      <form class="modal-form">
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-name">Your Name</label>
+          <div class="modal-form-field">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-email">Email</label>
+          <div class="modal-form-field">
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-phone">Phone number</label>
+          <div class="modal-form-field">
+            <input
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Placeholder"
+              required
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <button type="submit" class="modal-button-checkout">
+          Go to checkout
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<!---->
+<div class="backdrop is-hidden" data-modal-65>
+  <div class="modal">
+    <button type="button" class="modal-button-close" data-modal-close-65>
+      <svg class="modal-close-icon" width="32" height="32">
+        <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-cloze"></use>
+      </svg>
+    </button>
+    <!---->
+    <div class="modal-block">
+      <h2 class="modal-text-header">Join Now!</h2>
+      <div class="modal-text">
+        <p class="modal-text-session">8 Sessions Package</p>
+        <p class="modal-text-price">$65</p>
+      </div>
+      <!---->
+      <form class="modal-form">
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-name">Your Name</label>
+          <div class="modal-form-field">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-email">Email</label>
+          <div class="modal-form-field">
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-phone">Phone number</label>
+          <div class="modal-form-field">
+            <input
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Placeholder"
+              required
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <button type="submit" class="modal-button-checkout">
+          Go to checkout
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!---->
+<div class="backdrop is-hidden" data-modal-80>
+  <div class="modal">
+    <button type="button" class="modal-button-close" data-modal-close-80>
+      <svg class="modal-close-icon" width="32" height="32">
+        <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-cloze"></use>
+      </svg>
+    </button>
+    <!---->
+    <div class="modal-block">
+      <h2 class="modal-text-header">Join Now!</h2>
+      <div class="modal-text">
+        <p class="modal-text-session">12 Sessions Package</p>
+        <p class="modal-text-price">$80</p>
+      </div>
+      <!---->
+      <form class="modal-form">
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-name">Your Name</label>
+          <div class="modal-form-field">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-email">Email</label>
+          <div class="modal-form-field">
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Placeholder"
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <div class="modal-form-wrapper">
+          <label class="modal-form-label" for="user-phone">Phone number</label>
+          <div class="modal-form-field">
+            <input
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Placeholder"
+              required
+              class="modal-form-field-input"
+            />
+          </div>
+        </div>
+        <button type="submit" class="modal-button-checkout">
+          Go to checkout
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-Newsletter">
+      <a class="footer-logo" href="./index.html">
+        <svg class="footer-logo-icon" width="84" height="36">
+          <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-logo"></use>
+        </svg>
       </a>
-    </p>
+      <p class="footer-Newsletter-text">
+        Subscribe to our newsletter for the latest updates on our yoga courses
+        and events.
+      </p>
+      <form class="footer-form">
+        <fieldset>
+          <div>
+            <input
+              class="footer-form-input"
+              type="email"
+              id="subscribe-email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <button class="footer-form-button" type="submit">Join</button>
+        </fieldset>
+        <label class="footer-form-label" for="subscribe-email">
+          By subscribing, you consent to our Privacy Policy and agree to receive
+          updates.</label
+        >
+      </form>
+      <p class="footer-last-text-1336">
+        © 2025 Yoga Studio. All rights reserved.
+      </p>
+    </div>
+    <div class="footer-links">
+      <nav class="footer-nav">
+        <h3 class="footer-nav-text">Quick Links</h3>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-list-items">
+            <a class="footer-nav-link" href="#yoga-classes">Yoga Classes</a>
+          </li>
+          <li class="footer-nav-list-items">
+            <a class="footer-nav-link" href="#team">Team</a>
+          </li>
+          <li class="footer-nav-list-items">
+            <a class="footer-nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="footer-nav-list-items">
+            <a class="footer-nav-link" href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <h3 class="footer-social-text">Connect With Us</h3>
+        <ul class="footer-social-links">
+          <li class="footer-social-links-items">
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg class="footer-social-links-icon" width="24" height="24">
+                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-facebook"></use>
+              </svg>
+              Facebook
+            </a>
+          </li>
+          <li class="footer-social-links-items">
+
+            <a href="https://www.instagram.com/" target="_blank">
+           
+              <svg class="footer-social-links-icon" width="24" height="24">
+                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-instagram"></use>
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li class="footer-social-links-items">
+            <a href="https://www.linkedin.com/" target="_blank">
+              <svg class="footer-social-links-icon" width="24" height="24">
+                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-linkedin"></use>
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li class="footer-social-links-items">
+            <a href="https://www.youtube.com/" target="_blank">
+              <svg class="footer-social-links-icon" width="24" height="24">
+                <use href="/YogaBloom/assets/icons-mb-n-Faj.svg#icon-youtube"></use>
+              </svg>
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-last-text">© 2025 Yoga Studio. All rights reserved.</p>
   </div>
 </footer>
 
