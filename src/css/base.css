@@ -1,5 +1,14 @@
 body {
-    font-family: "Sarabun", sans-serif;
-    color: #0d0b0a;
-    background-color: #f2fafa;
+  font-family: 'Sarabun', sans-serif;
+  color: #0d0b0a;
+  background-color: #f2fafa;
 }
+
+/* dark theme, if enabled in the system */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: white;
+
+  }
+} */

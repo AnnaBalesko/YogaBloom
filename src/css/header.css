@@ -28,12 +28,45 @@
     border-radius: 5px;
     width: 84px;
     height: 36px;
+    animation: heartbeat 1.5s infinite;
+    transform-origin: center;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.3);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .header-logo:hover,
 .header-logo:focus {
-    fill: #f8fbfe;
-    background-color: #0d0b0a;
+    fill: #f2fafa;
+     background: linear-gradient(to top, 
+    #2b1055,      /* тёмно-фиолетовый (низ, как земля/тень) */
+    #6a0572,      /* фиолетовый */
+    #ff6a00,      /* оранжевый (закатное солнце) */
+    #ffb347,      /* светло-оранжевый */
+    #ffe29f,      /* золотистый */
+    #fad0c4,      /* розовый */
+    #a18cd1       /* светло-фиолетовый (небо выше) */
+  );
+  animation: none;
+    
 }
 
 .left-header-box,
