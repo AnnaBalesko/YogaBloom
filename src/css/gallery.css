@@ -1,0 +1,70 @@
+.gallery {
+  padding: 64px 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.gallery-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  margin: 0 auto;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-list-item {
+  width: calc((100% - 24px) / 2);
+}
+.gallery-picture {
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 40px 32px;
+  }
+  
+  .gallery-container {
+    gap: 80px;
+  }
+  .gallery-header {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1336px) {
+  
+  .gallery {
+    padding: 112px 64px;
+  }
+  .gallery-title {
+    font-size: 52px;
+  }
+  .gallery-text {
+    font-weight: 500;
+    max-width: 768px;
+  }
+  .gallery-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}

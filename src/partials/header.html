@@ -1,19 +1,98 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+<header class="page-header">
+  <div class="container header-container">
+    <div class="left-header-box">
+      <button type="button" class="menu-button" data-mobile-navbar-open>
+        <svg class="icon-head-button" width="24" height="24">
+          <use href="/img/icons.svg#icon-menu"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      </button>
+      <!---->
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-item">
+            <a href="#yoga-classes" class="header-nav-link current"
+              >Yoga classes</a
+            >
+          </li>
+          <li class="header-item">
+            <a href="#team" class="header-nav-link">Team</a>
+          </li>
+          <li class="header-item">
+            <a href="#testimonials" class="header-nav-link">Testimonials</a>
+          </li>
+          <li class="header-item">
+            <a href="#pricing" class="header-nav-link">Pricing</a>
+          </li>
+          <li class="header-item">
+            <a href="#footer" class="header-nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!---->
+    <a href="./index.html" class="header-logo">
+      <svg class="icon-head-logo" width="84" height="36">
+        <use href="/img/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <!---->
+    <div class="right-header-box">
+      <div class="header-link-box">
+        <a class="join-link-mobile" href="#pricing">Join</a>
+        <a class="join-link-desktop" href="#pricing">Join now</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Mobile navbar menu-->
+  <div class="mobile-navbar is-hidden" data-mobile-navbar>
+    <div class="container mobile-navbar-container">
+      <div class="mobile-navbar-header">
+        <button
+          type="button"
+          class="navbar-button-close"
+          data-mobile-navbar-close
+        >
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-cloze"></use>
+          </svg>
+        </button>
+        <!---->
+        <a href="/index.html" class="navbar-header-logo">
+          <svg class="icon-head-logo" width="84" height="36">
+            <use href="/img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="nav-link-tech-box">
+          <div class="navbar-link-box">
+            <a class="navbar-join-link-mobile" href="#pricing">Join</a>
+            <a class="navbar-join-link-desktop" href="#pricing">Join now</a>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <nav class="navbar-menu-nav">
+        <ul class="navbar-nav-list">
+          <li class="navbar-nav-item">
+            <a href="#yoga-classes" class="navbar-nav-link">Yoga classes</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#team" class="navbar-nav-link">Team</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#testimonials" class="navbar-nav-link">Testimonials</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#pricing" class="navbar-nav-link">Pricing</a>
+          </li>
+          <li class="navbar-nav-item">
+            <a href="#footer" class="navbar-nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar-nav-link-bottom">
+        <a href="#pricing" class="join-now-button-bottom">Join now</a>
+      </div>
+    </div>
   </div>
 </header>

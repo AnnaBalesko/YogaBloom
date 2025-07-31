@@ -1,0 +1,280 @@
+/* section styles */
+.mobile {
+  display: block;
+}
+
+.tablet {
+  display: none;
+}
+
+.yoga-classes {
+  background-color: #dfebeb;
+  padding: 64px 16px;
+}
+
+.yoga-classes-section {
+  max-width: 100%;
+  
+  color: #0d0b0a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.section-head {
+  max-width: 343px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-direction-title {
+  font-family: 'Sarabum', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+
+.section-basic-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.section-paragraph {
+  font-family: 'Sarabum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.card {
+  max-width: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  border-radius: 16px;
+  overflow: hidden;
+
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.link-container {
+  width: 100%;
+  max-width: 343px;
+  min-height: 46px;
+  padding: 10px 24px;
+  flex-shrink: 1;
+
+  border: none;
+  border-radius: 100px;
+  background-color: #c2d9fc;
+  text-align: center;
+  border: 1px solid #c2d9fc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-container:hover,
+.link-container:focus {
+  color: #0d0b0a;
+  background-color: #c2d9fc;
+  opacity: 0.5;
+}
+
+.join-link {
+  margin: 0;
+  max-height: 100%;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .yoga-classes {
+    background-color: #f2fafa;
+    padding: 40px 32px;
+  }
+
+  .yoga-classes-section {
+    max-width: 768px;
+    
+  }
+
+  .section-head {
+    max-width: 768px;
+  }
+
+  .section-direction-title {
+    margin-bottom: 16px;
+  }
+
+  .section-basic-title {
+    margin-bottom: 24px;
+  }
+
+  .section-paragraph {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 24px;
+    row-gap: 27px;
+  }
+
+  .card {
+    max-width: 340px;
+  }
+
+  .card.broad-card {
+    min-width: 704px;
+    flex-grow: 1;
+  }
+
+  picture.card-image,
+  picture.card-image img {
+    margin-bottom: 16px;
+  }
+
+  .card-image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .card.broad-card .card-image.broad-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-title {
+    margin: 0;
+  }
+
+  .link-container {
+    width: auto;
+    min-width: 110px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desctop {
+    display: block;
+  }
+
+  .yoga-classes {
+    background-color: transparent;
+    padding: 112px 64px;
+  }
+
+  .yoga-classes-section {
+    max-width: 1336px;
+    margin: 0 auto;
+  }
+
+  .section-head {
+    max-width: 768px;
+  }
+
+  .section-basic-title {
+    font-size: 52px;
+  }
+
+  .section-paragraph {
+    font-size: 18px;
+  }
+
+  .cards-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .cards-container .card {
+    width: calc((100% - 24px * 2) / 3);
+    max-width: 422px;
+  }
+
+  .card-image {
+    margin: 0;
+  }
+
+  .card-title {
+    font-size: 36px;
+  }
+
+  .link-container {
+    width: auto;
+    min-width: 110px;
+  }
+}
