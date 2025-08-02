@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   transition: all 0.3s ease;
+  padding-top: 64px;
 }
 
 .hero-container {
@@ -84,7 +85,9 @@
   opacity: 0.5;
 }
 @media only screen and (min-width: 768px) {
-  
+  .img-hero {
+    padding-top: 75px;
+  }
   .hero-container {
     padding: 24px 32px;
     gap: 8px;
@@ -108,7 +111,6 @@
 }
 
 @media only screen and (min-width: 1336px) {
-  
   .hero-title {
     font-size: 72px;
     max-width: 644px;
