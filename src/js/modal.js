@@ -40,23 +40,27 @@
   });
 })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-80]'),
-    closeModalBtn: document.querySelector('[data-modal-close-80]'),
-    modal: document.querySelector('[data-modal-80]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.querySelector('[data-modal-80]');
+  const openButtons = document.querySelectorAll('[data-modal-open-80]');
+  const closeButton = document.querySelector('[data-modal-close-80]');
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    modal.classList.toggle('is-hidden');
     document.body.classList.toggle('no-scroll');
   }
-  refs.modal.addEventListener('click', function (e) {
+
+  openButtons.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  if (closeButton) {
+    closeButton.addEventListener('click', toggleModal);
+  }
+
+  modal.addEventListener('click', function (e) {
     if (e.target.classList.contains('backdrop')) {
       toggleModal();
     }
   });
-})();
+});

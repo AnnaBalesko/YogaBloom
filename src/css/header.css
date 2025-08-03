@@ -189,7 +189,7 @@
 
     .header-nav-link:hover,
     .header-nav-link:focus,
-    .header-nav-link.current {
+    .header-nav-link.active {
         border-bottom-color: rgba(13, 11, 10, 0.5);
     }
 
